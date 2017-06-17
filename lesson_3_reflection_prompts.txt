@@ -1,7 +1,7 @@
-When would you want to use a remote repository rather than keeping all your work
+1.When would you want to use a remote repository rather than keeping all your work
 local?
-
-    Fill in your answer here
+何时你会想使用远程版本库，而不是将所有工作保存在本地？
+答：当我的电脑不在我身边时。
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
