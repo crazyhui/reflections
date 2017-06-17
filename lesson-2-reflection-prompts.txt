@@ -1,0 +1,44 @@
+1、What happens when you initialize a repository? Why do you need to do it?
+初始化版本库时会发生什么情况？为什么你需要这样做？
+答：
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        bootstrap-table-example.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+2、How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+答：
+	工作目录修改代码，添加到暂存区，确定本次所需修改的文件都添加到暂存区后，提交到repository。
+
+3、How can you use the staging area to make sure you have one commit per logical
+change?
+如何使用暂存区确保为每项逻辑更改进行一次提交？
+
+答：
+	git add ;
+	git diff --staged//查看暂存区和repository不同之处，提交前作为检查使用
+	git reset //撤销本次添加到暂存区的动作
+	git reset --hard//撤销提交
+
+4、What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+图表如何帮助你直观显示分支结构？
+
+答：
+	git log --graph --oneline master coins easymode
+	//--图形化 --简略 三种分支
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
